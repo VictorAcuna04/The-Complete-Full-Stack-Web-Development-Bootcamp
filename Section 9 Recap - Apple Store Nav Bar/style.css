@@ -1,29 +1,32 @@
 body {
-    color: #1D1D1F;
+  color: #1d1d1f;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .navbar {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (max-width: 840px) {
-    .navbar {
-        justify-content: space-between;
-        flex-direction: column;
-        margin-left: 40px;
-        margin-top: 50px;
-        font-size: 25px;
-        font-weight: 600;
-        gap: 5px;
-        height: 510px;
-    }
+  .navbar {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    gap: 10px;
+  }
 
-    #apple-logo, #search, #shopping-bag {
-        display: none;
-    }
+  #apple-logo,
+  #search,
+  #shopping-bag {
+    display: none;
+  }
 }
