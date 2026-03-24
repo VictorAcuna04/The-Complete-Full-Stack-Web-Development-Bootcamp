@@ -1,0 +1,29 @@
+body {
+    color: #1D1D1F;
+}
+
+.navbar {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 15px;
+}
+
+@media (max-width: 840px) {
+    .navbar {
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        gap: 5px;
+        height: 510px;
+    }
+
+    #apple-logo, #search, #shopping-bag {
+        display: none;
+    }
+}
