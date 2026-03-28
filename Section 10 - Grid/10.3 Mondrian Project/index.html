@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +18,77 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        margin: 0;
+      }
 
+      .grid-container {
+        background-color: #000;
+        display: grid;
+        width: 748px;
+        height: 748px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+
+      .grid-item {
+        background-color: #f0f1ec;
+      }
+
+      #child-1 {
+        background-color: #e72f24;
+      }
+
+      #child-2 {
+        grid-column: 2/5;
+      }
+
+      #child-3 {
+        grid-row: 2/4;
+      }
+
+      #child-4 {
+        grid-row: 2/4;
+        grid-column: 2/4;
+      }
+
+      #child-5 {
+        grid-row: 3/5;
+      }
+
+      #child-6 {
+        background-color: #004592;
+        border-bottom: 10px solid #000;
+      }
+
+      #child-8 {
+        background-color: #f9d01e;
+      }
+
+      #child-9 {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="grid-container">
+      <div class="grid-item" id="child-1"></div>
+      <div class="grid-item" id="child-2"></div>
+      <div class="grid-item" id="child-3"></div>
+      <div class="grid-item" id="child-4"></div>
+      <div class="grid-item" id="child-5"></div>
+      <div class="grid-item" id="child-6"></div>
+      <div class="grid-item" id="child-7"></div>
+      <div class="grid-item" id="child-8"></div>
+      <div class="grid-item" id="child-9"></div>
+    </div>
+  </body>
 </html>
